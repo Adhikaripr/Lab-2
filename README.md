@@ -1,4 +1,8 @@
-## Analysis of KNN and RNN Classifier Performance on the Wine Dataset
+
+## Advanced Big Data and Data Mining (MSCS-634-B01) - Second Bi-term
+## Prasanna Adhikari
+## 09 Nov 2025
+## Lab 2: Classification Using KNN and RNN Algorithms
 
 # Purpose of the Lab Work
 The aim of this lab was to evaluate and compare the performance of two machine learning classifiers—K-Nearest Neighbors (KNN) and Radius Neighbors (RNN)—using the Wine Dataset from the sklearn Python library. The main focus was to investigate how different parameter choices, such as the number of neighbors in KNN and the radius in RNN, affect the accuracy of the models. Additionally, we sought to visualize key outcomes and gain a deeper understanding of how classifier parameters influence prediction performance. Through this exercise, we intended to determine which of the two classifiers is more suitable for datasets with specific distributions and structures.
