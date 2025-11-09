@@ -1,2 +1,13 @@
-# Lab-2
-lab 2
+## Analysis of KNN and RNN Classifier Performance on the Wine Dataset
+
+# Purpose of the Lab Work
+The aim of this lab was to evaluate and compare the performance of two machine learning classifiers—K-Nearest Neighbors (KNN) and Radius Neighbors (RNN)—using the Wine Dataset from the sklearn Python library. The main focus was to investigate how different parameter choices, such as the number of neighbors in KNN and the radius in RNN, affect the accuracy of the models. Additionally, we sought to visualize key outcomes and gain a deeper understanding of how classifier parameters influence prediction performance. Through this exercise, we intended to determine which of the two classifiers is more suitable for datasets with specific distributions and structures.
+
+# Key Insights from Model Results and Observations
+For KNN, the highest accuracy of 97.22% was achieved when the number of neighbors, k, was set to 15. This demonstrates that selecting an appropriate k value is crucial for optimizing performance, as a moderate number of neighbors can prevent the model from overfitting or underfitting the data. In contrast, RNN achieved its best result with a radius of 350 but only reached an accuracy of 38.89%. This relatively low performance indicates that RNN may not be well-suited for the Wine dataset, possibly because the dataset benefits more from a fixed neighbor count rather than a fixed distance threshold. Comparing the two, it is clear that KNN is more effective in this scenario, particularly when the data exhibits distinct and separable clusters. RNN, on the other hand, may be better suited for datasets with irregular structures or non-linear decision boundaries.
+
+# Challenges Encountered and Solutions Applied
+A significant challenge in this lab was selecting optimal parameter values for both classifiers. Multiple trials revealed that a k value of 15 worked best for KNN, whereas a radius of 350 was optimal for RNN. Another challenge was comparing the two models, as RNN’s performance was considerably weaker, highlighting the fact that the Wine dataset’s characteristics favor neighbor-based rather than radius-based classification. Additionally, both KNN and RNN are sensitive to the scale of the data, so standardization was applied using StandardScaler to ensure that each feature contributed equally to the distance calculations, which improved model reliability.
+
+# Conclusion
+This lab provided meaningful insights into the relationship between classifier parameters and model performance. The KNN classifier proved more accurate for the Wine dataset, while RNN may be more suitable for datasets with complex or irregular decision boundaries. Future investigations could explore a broader range of parameters, try alternative distance metrics, or apply other classification models to identify methods that yield improved accuracy and robustness for similar datasets.
